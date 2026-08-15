@@ -1,0 +1,200 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYgBYM1R_ncSshnquC5tjiTudVNaPdp71Dq60eVmZcbQ&s=10);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            color:rgba(248, 0, 0, 0.627);
+        }
+
+        .container1 {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .container1{
+    animation: slideLeft 1s ease-in-out;
+}
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-200px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+        .container1 h1 {
+          margin-bottom: 40px;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgb(98, 95, 100);
+            margin-bottom: 10px;
+        }
+
+        .profile h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .profile p {
+            font-size: 2rem;
+            margin: 10px;
+            color: rgba(248, 0, 0, 0.627);
+        }
+
+        .card1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .card2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .container2 {
+    font-size: 60px;
+    animation: zoomin 1s ease-out;
+}
+
+@keyframes zoomin {
+    from {
+        opacity: 0;
+        transform: scale(3);
+    }
+
+    to {
+        opacity: 4;
+        transform: scale(1);
+    }
+}
+
+        
+        .card1 a {
+            text-decoration: none;
+            color: #7170709b;
+            background: rgb(1, 1, 1);
+            border: 5px solid rgb(98, 98, 98);
+            padding: 27px 40px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0,8s ease-in-out;
+        }
+
+        .card2 a {
+            text-decoration: none;
+            color: #7675759b;
+            background: rgb(1, 1, 1);
+            border: 5px solid rgb(99, 99, 99);
+            padding: 27px 90px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0,8s ease-in-out;
+        }
+
+        .card1 a:hover {
+            transform: translateY(-8px);
+            background: rgb(249, 0, 0);
+            box-shadow: 0 8px 20px rgb(255, 1, 1);
+        }
+
+        .card2 a:hover {
+            transform: translateY(-8px);
+            background: rgb(249, 0, 0);
+            box-shadow: 0 8px 20px rgb(255, 1, 1);
+        }
+
+        .fa-intagram {
+            --fa: "\f16d";
+        }
+
+        .footer {
+    font-size: 60px;
+    animation: fadeUp 2s ease-in, 1s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 4;
+        transform: translateY(0);
+    }
+}
+
+        .footer {
+            margin-top: 40px;
+            font-size: 15px;
+            text-align: center;
+            color: #717171;
+        }
+        
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 1,8rem;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: aliceblue;
+            }
+
+            .link-row {
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                padding: 5px 5px;
+            }
+
+            link-btn {
+                width: 100%;
+                max-height: 280px;
+                padding: 8px 12px;
+            }
+
+            .link-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 0 8px rgba(255, 255, 255, 0.292);
+            }
+        }
